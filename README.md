@@ -30,7 +30,7 @@ A subdomain, parameters and xss enumeration script. thats it! :)
 <br></br>
 <a href="https://github.com/hahwul/dalfox">Dalfox</a>
 <br></br>
-<a href="https://github.com/s0md3v/Arjun/blob/master/arjun/db/params.txt">Wordlist</a>
+<a href="https://github.com/s0md3v/Arjun/blob/master/arjun/db/params.txt"> Params.txt wordlist</a>
 
 <h4>Other tools:</h4>
 
