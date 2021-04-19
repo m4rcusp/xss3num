@@ -7,6 +7,8 @@ read host
 echo "Insert your bug bounty program name and your username:"
 echo "ex: hackerone:h4cker"
 read username
+echo "insert the params.txt wordlist path"
+read path
 echo "Looking for subdomains..."
 subfinder -d $host | anew subf
 echo "$host" | haktrails subdomains | anew haktrails1
@@ -26,5 +28,5 @@ echo "Validating..."
 anti-burl xss | anew xss1
 echo "Done!"
 echo "Injecting payload into the parameters..."
-cat xss1 | dalfox pipe --mining-dict-word /root/bounty/subdom/params.txt --skip-bav -o resultxss
+cat xss1 | dalfox pipe --mining-dict-word $path --skip-bav -o resultxss
 echo "Done!"
