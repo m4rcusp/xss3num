@@ -28,5 +28,5 @@ echo "Validating..."
 anti-burl xss | anew xss1
 echo "Done!"
 echo "Injecting payload into the parameters..."
-cat xss1 | dalfox pipe --mining-dict-word $path --skip-bav -o resultxss
+cat xss1 | cut -d " " -f9 | dalfox pipe --mining-dict-word $path --skip-bav -o resultxss
 echo "Done!"
